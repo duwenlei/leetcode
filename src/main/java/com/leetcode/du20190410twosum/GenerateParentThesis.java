@@ -12,7 +12,12 @@ public class GenerateParentThesis {
 //                if (i > 1 && j == i) {
 //                    continue;
 //                }
+                // 写到这里
 
+                //1、拼接第N列完整（）
+                //2、拼接左括号
+                //3、拼接右括号
+                //4、拼接尾部括号
 
                 int index = 0;
                 int count = 0;
