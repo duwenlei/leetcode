@@ -1,4 +1,4 @@
-package com.leetcode.du20190410twosum;
+package com.leetcode.du20190410;
 
 import java.util.ArrayList;
 import java.util.List;

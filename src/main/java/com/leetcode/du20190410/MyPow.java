@@ -1,4 +1,4 @@
-package com.leetcode.du20190410twosum;
+package com.leetcode.du20190410;
 
 public class MyPow {
     public double myPow(double x, int n) {
