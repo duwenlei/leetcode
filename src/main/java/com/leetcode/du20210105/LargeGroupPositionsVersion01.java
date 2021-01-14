@@ -1,6 +1,7 @@
 package com.leetcode.du20210105;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -20,20 +21,14 @@ public class LargeGroupPositionsVersion01 {
                 end = i;
             } else {
                 if (end - start >= 2) {
-                    ArrayList<Integer> integers = new ArrayList<>();
-                    integers.add(start);
-                    integers.add(end);
-                    ret.add(integers);
+                    ret.add(Arrays.asList(start, end));
                 }
                 start = i;
                 idx = c;
             }
         }
         if (end - start >= 2) {
-            ArrayList<Integer> integers = new ArrayList<>();
-            integers.add(start);
-            integers.add(end);
-            ret.add(integers);
+            ret.add(Arrays.asList(start, end));
         }
         return ret;
     }
