@@ -21,4 +21,7 @@ public class Find132pattern {
         Find132pattern find132pattern = new Find132pattern();
         System.out.println(find132pattern.find132pattern(arr));
     }
+    private void test(){
+
+    }
 }
