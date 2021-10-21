@@ -12,7 +12,7 @@ import java.util.Queue;
  **/
 public class BFS {
     public static void main(String[] args) {
-        bfs(GRAPH, "E");
+        bfs(GRAPH, "A");
     }
 
     private static Map<String, List<String>> GRAPH;
