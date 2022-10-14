@@ -1,7 +1,5 @@
 package com.leetcode.y2021.m04.d26;
 
-import sun.reflect.generics.tree.Tree;
-
 /**
  * 二叉搜索树认证
  *
