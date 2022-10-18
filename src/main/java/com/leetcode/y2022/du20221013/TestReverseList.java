@@ -35,11 +35,26 @@ public class TestReverseList {
     }
 
     public static void main(String[] args) {
-        ListNode l3 = new ListNode(3);
+        ListNode l4 = new ListNode(4);
+        ListNode l3 = new ListNode(3, l4);
         ListNode l2 = new ListNode(2, l3);
         ListNode l1 = new ListNode(1, l2);
 
-        ListNode reverseList = reverseList(l1);
+        ListNode reverseList = reverseList1(l1);
         System.out.println(1);
     }
+
+    public static ListNode reverseList1(ListNode head) {
+        ListNode prev = null;
+        ListNode curr = head;
+
+        while (curr != null) {
+            ListNode next = curr.next;
+            curr.next = prev;
+            prev = curr;
+            curr = next;
+        }
+        return prev;
+    }
+
 }
