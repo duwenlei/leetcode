@@ -55,7 +55,7 @@ public class TestCodec {
         System.out.println(serialize);
     }
 
-    public static class TreeNode {
+    private static class TreeNode {
         int val;
         TreeNode left;
         TreeNode right;
