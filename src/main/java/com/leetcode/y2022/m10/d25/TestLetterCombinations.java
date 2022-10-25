@@ -37,10 +37,7 @@ public class TestLetterCombinations {
         } else {
             String letters = map.get(digits.charAt(index));
             for (int i = 0; i < letters.length(); i++) {
-                s += letters.charAt(i);
-                helper(digits, index + 1, s, ans, map);
-                // 删除上一个 helper 上的字母
-                s = s.substring(0,index);
+                helper(digits, index + 1, s+ letters.charAt(i), ans, map);
             }
         }
     }
